@@ -41,7 +41,7 @@ impl<'a> Uri<'a> {
             path
         );
         let mut url = Url::parse(host_str.as_ref())?;
-        url = url.join(path)?;
+        //url = url.join(path)?;
 
         if let Some(pairs) = query {
             trace!("pairs: {}", serde_json::to_string(&pairs)?);
